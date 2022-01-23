@@ -6,12 +6,15 @@
 - `-dx12`
 
 	Forces usage of DirectX 12. Huge performance boost in avg FPS.
+	
 	Known issues:
 	- Game ocasionally will crash reporing D3D error when Alt-Tabbing while loading a new map.
     - Flickering artifacts on bushes on some maps.
 
 - `-dx9` 
+
 	Forces usage of DirectX 9. Huge performance boost in avg FPS.
+	
 	Known issues:
 	- Game visuals are worse in comparison to DX11/DX12.
     - Alt-Tabbing is slow and flickery.
