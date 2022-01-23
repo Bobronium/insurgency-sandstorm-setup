@@ -1,6 +1,137 @@
-# Insurgency: Sandstorm
+# insurgenct-sandstorm-setup
  Stutter-less and performance oriented Insurgency: Sandstorm setup
  
+## Engine.ini tweaks
+### Texture streaming tweak (remove stutters)
+```ini
+[TextureStreaming]
+BoostPlayerTextures=1.0
+AllowStreamingLightmaps=False
+r.Streaming.DropMips=0
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.MipBias=0
+r.Streaming.UseAllMips=1
+r.Streaming.UseMaterialData=1
+r.Streaming.UseNewMetrics=1
+r.Streaming.UsePerTextureBias=1
+```
+### Various settings for `[/script/engine.renderersettings]` section
+### Improve TAA sharpeness and quality
+```ini
+r.PostProcessAAQuality=5
+r.Tonemapper.Sharpen=0.6
+r.DepthOfField.FarBlur=0
+```
+### Another possibele stutters fix
+```ini
+r.CreateShadersOnLoad=1
+r.Shaders.Optimize=1
+```
+### Disable/criple shadows for performance
+```ini
+r.Shadow.MaxResolution=2
+r.Shadow.DistanceScale=0.001
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0
+r.ShadowQuality=0
+r.Shadow.CSM.MaxCascades=1
+r.Shadow.RadiusThreshold=0.1
+r.Shadow.CSM.TransitionScale=0
+```
+
+### Disable bloom/blur/volumetric lighting
+```ini
+r.BloomQuality=0
+r.BlurGBuffer=0
+r.VolumetricFog=0
+r.VolumetricFog.GridPixelSize=0
+r.VolumetricFog.GridSizeZ=0
+r.DefaultFeature.AutoExposure=False
+r.DefaultFeature.Bloom=False
+r.Tonemapper.GrainQuantization=0
+r.LightShaftQuality=0
+r.RefractionQuality=0
+r.LPV.RSMResolution=4
+```
+### Optimize blur
+```ini
+r.FastBlurThreshold=0
+```
+### Other stuff that I have and dunno much about
+```ini
+r.Streaming.MipBias=0
+r.Streaming.PoolSize=4000
+r.FinishCurrentFrame=0
+r.TranslucencyLightingVolumeDim=6
+r.DetailMode=0
+r.TranslucencyVolumeBlur=0
+r.GBufferFormat=3
+r.VirtualTexture=1
+r.VirtualTextureReducedMemory=1
+s.AsyncLoadingThreadEnabled=1
+r.SkinCache.Mode=1
+r.ClearWithExcludeRects=2
+r.OptimizeForUAVPerformance=1
+r.CreateShadersOnLoad=1
+r.Shaders.Optimize=1
+```
+### Random settings from random optimization guides
+```ini
+[ConsoleVariables]
+AllowAsyncRenderThreadUpdates=1
+AllowAsyncRenderThreadUpdates=1
+AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1
+AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1
+AllowAsyncRenderThreadUpdatesEditor=1
+AllowAsyncRenderThreadUpdatesEditor=1
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1
+r.DeferUniformBufferUpdatesUntilVisible=1
+r.DoInitViewsLightingAfterPrepass=1
+r.SkinCache.Mode=1
+r.ClearWithExcludeRects=2
+r.CreateShadersOnLoad=1
+r.StreamingPoolSize=-1
+```
+
+```ini
+[ConsoleVariables]
+AllowAsyncRenderThreadUpdates=1
+AllowAsyncRenderThreadUpdates=1
+AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1
+AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1
+AllowAsyncRenderThreadUpdatesEditor=1
+AllowAsyncRenderThreadUpdatesEditor=1
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1
+r.DeferUniformBufferUpdatesUntilVisible=1
+r.DoInitViewsLightingAfterPrepass=1
+r.SkinCache.Mode=1
+r.ClearWithExcludeRects=2
+r.CreateShadersOnLoad=1
+r.StreamingPoolSize=-1
+```
+
+```ini
+[/script/engine.garbagecollectionsettings]
+TimeBetweenPurgingPendingKillObjects=15
+```
+
+```ini
+[/script/engine.engine]
+bUseVSync=false
+MaxPixelShaderAdditiveComplexityCount=128
+MaxES2PixelShaderAdditiveComplexityCount=45
+IdealLightMapDensity=0.02
+MaxLightMapDensity=0.05
+```
+
+```ini
+[WindowsApplication.Accessibility]
+StickyKeysHotkey=True
+ToggleKeysHotkey=True
+FilterKeysHotkey=True
+StickyKeysConfirmation=True
+ToggleKeysConfirmation=True
+FilterKeysConfirmation=True
+```
 ## Launch options
 - `-dx12`
 
@@ -10,7 +141,7 @@
 	- Game ocasionally will crash reporing D3D error when Alt-Tabbing while loading a new map.
     - Flickering artifacts on bushes on some maps.
 
-- `-dx9` 
+- `-dx9`
 
 	Forces usage of DirectX 9. Huge performance boost in avg FPS.
 	
@@ -31,5 +162,3 @@ Create a shortcut with following path and drag it to launch panel:
 `%windir%\explorer.exe steam://rungameid/581320`
 
 For better looks, you can give it Insurgenct executable icon. 
-
-
