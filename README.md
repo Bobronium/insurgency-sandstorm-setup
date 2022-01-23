@@ -23,4 +23,4 @@
 Won't hurt. Won't help either. 
 - `-USEALLAVAILABLECORES` - so far I didn't notice any changes in performance when using this. [Some comment](https://steamcommunity.com/app/581320/discussions/0/2143092024478001183/?ctp=2#c3196993831804372917) 
 - `-NoGlobalInvalidation` - this was in fact a helpful option that fixed stuttering in [1.7.1 update](https://store.steampowered.com/news/app/581320/view/3881493771286319979). It was recommended by devs as a temporary workaround, until [1.7.1 Hotfix 2](https://store.steampowered.com/news/app/581320/view/2789374424361935598) was released where global invalidation has been removed. So now this option is obsolete. 
-- `-malloc=tbbmalloc/system` - doesn't do shit in UE4. `%windir%\explorer.exe steam://rungameid/581320`
+- `-malloc=tbbmalloc/system` - doesn't do shit in UE4.
