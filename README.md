@@ -93,23 +93,6 @@ r.StreamingPoolSize=-1
 ```
 
 ```ini
-[ConsoleVariables]
-AllowAsyncRenderThreadUpdates=1
-AllowAsyncRenderThreadUpdates=1
-AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1
-AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1
-AllowAsyncRenderThreadUpdatesEditor=1
-AllowAsyncRenderThreadUpdatesEditor=1
-r.DeferSkeletalDynamicDataUpdateUntilGDME=1
-r.DeferUniformBufferUpdatesUntilVisible=1
-r.DoInitViewsLightingAfterPrepass=1
-r.SkinCache.Mode=1
-r.ClearWithExcludeRects=2
-r.CreateShadersOnLoad=1
-r.StreamingPoolSize=-1
-```
-
-```ini
 [/script/engine.garbagecollectionsettings]
 TimeBetweenPurgingPendingKillObjects=15
 ```
