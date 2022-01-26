@@ -1,5 +1,13 @@
 # insurgenct-sandstorm-setup
- Stutter-less and performance oriented Insurgency: Sandstorm setup
+Stutter-less and performance oriented Insurgency: Sandstorm setup
+ 
+## Fighting with stutters
+So far I had experienced these types of stuttering:
+- HUGE stuttering only when moving the mouse
+- Minor stutters on some ingame events (objective captured, etc.)
+- Stutters when moving around the map
+- Random stutters ocasional stutters ¯\\_(ツ)_/¯
+TODO: describe the ways of fighting with them
  
 ## Engine.ini tweaks
 ### Texture streaming tweak (remove stutters)
