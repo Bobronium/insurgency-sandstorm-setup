@@ -7,6 +7,7 @@ So far I had experienced these types of stuttering:
 - Minor stutters on some ingame events (objective captured, etc.)
 - Stutters when moving around the map
 - Random stutters ocasional stutters ¯\\_(ツ)_/¯
+
 TODO: describe the ways of fighting with them
  
 ## Engine.ini tweaks
