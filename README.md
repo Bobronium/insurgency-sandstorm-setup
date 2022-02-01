@@ -3,10 +3,25 @@ Stutter-less and performance oriented Insurgency: Sandstorm setup
  
 ## Fighting with stutters
 So far I had experienced these types of stuttering:
-- HUGE stuttering only when moving the mouse
-- Minor stutters on some ingame events (objective captured, etc.)
-- Stutters when moving around the map
-- Random stutters ocasional stutters ¯\\_(ツ)_/¯
+1. Stuttering when moving the mouse
+2. Stuttering on some ingame events, e.g. captured objective.
+3. Stuttering when moving around the map
+4. Random ocasional stuttering ¯\\_(ツ)_/¯
+
+### 1. Stuttering when moving the mouse
+These are caused by high polling rate of your mouse (usually 1000Hz or higher) in combination with some overlays (Steam, Origin, UPlay, Discord).
+Lowering polling rate should not be an option, since it significantly cripples your performance when aiming.
+So far, the best solution to this is making sure you don't running any software that has built-in overlay functionality. Yes, even just running apps like Origin or Uplay causes stutters.
+
+When none of these apps are running, you should be free from such kind of stuttering.
+
+Unfortunately, it's unclear why some games don't have issues with high polling rate mouse and overlays, while some do.
+
+Some links to similar issues if you want to dive into that problem:
+- [CPU and GPU usage drops with mouse movement](https://forums.tomshardware.com/threads/cpu-and-gpu-usage-drops-with-mouse-movement.3519925/)
+- [Some Unreal based games have fps drop when using a 1000Hz polling rate mouse](https://github.com/ValveSoftware/Proton/issues/2455)
+- [Steam overlay makes game drop to 1fps (EDIT: Wine bug related to mouse polling rate)](https://github.com/ValveSoftware/Proton/issues/2875)
+- [1000hz mouse polling rate causes stuttering (Windows 11)](https://www.reddit.com/r/WindowsHelp/comments/oeyfk6/1000hz_mouse_polling_rate_causes_stuttering/)
 
 TODO: describe the ways of fighting with them
  
