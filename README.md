@@ -3,7 +3,7 @@ Stutter-less and performance oriented Insurgency: Sandstorm setup
  
 ## Fighting with stutters
 So far I had experienced these types of stuttering:
-1. [Stuttering when moving the mouse](https://github.com/Bobronium/insurgency-sandstorm-setup/blob/main/README.md#1-stuttering-when-moving-the-mouse)
+1. [Stuttering when moving the mouse](1-stuttering-when-moving-the-mouse)
 2. Stuttering on some ingame events, e.g. captured objective.
 3. Stuttering when moving around the map
 4. Random ocasional stuttering ¯\\_(ツ)_/¯
