@@ -1,4 +1,4 @@
-# insurgenct-sandstorm-setup
+# insurgency-sandstorm-setup
 Stutter-less and performance oriented Insurgency: Sandstorm setup
  
 ## Fighting with stutters
@@ -172,4 +172,4 @@ Create a shortcut with following path and drag it to launch panel:
 
 `%windir%\explorer.exe steam://rungameid/581320`
 
-For better looks, you can give it Insurgenct executable icon. 
+For better looks, you can give it Insurgency executable icon. 
