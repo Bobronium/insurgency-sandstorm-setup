@@ -11,15 +11,17 @@ So far I had experienced these types of stuttering:
 TODO: describe the ways of fighting with them
 
 ### Stuttering when moving the mouse
-These are caused by high polling rate of your mouse (usually 1000Hz or higher) in combination with some overlays (Steam, Origin, UPlay, Discord).
+These are caused by high polling rate of your mouse (usually 1000Hz or higher) in combination with some overlays (Steam, Origin, Ubisoft Connect (formely Uplay), Discord).
 
 Lowering polling rate should not be an option, since it significantly cripples your performance when aiming.
 
-So far, the best solution to this is making sure you don't running any software that has built-in overlay functionality. Yes, even just running apps like Origin or Uplay causes stutters.
+So far, the best solution to this is making sure you're not running any software that has built-in overlay functionality while gaming. Yes, even just running apps like Origin or Ubisoft Connect causes stutters. Whene it's not possible/plausable to kill such app, at least disable its overlay.
 
 When none of these apps are running, you should be free from such kind of stuttering.
 
 Unfortunately, it's unclear why some games don't have issues with high polling rate mouse and overlays, while some do.
+
+As far as I experienced, Nvidia Shadowplay (or whatever it's called right now) does not contribute to this problem and can be left enabled.
 
 Some links to similar issues if you want to dive into that problem:
 - [CPU and GPU usage drops with mouse movement](https://forums.tomshardware.com/threads/cpu-and-gpu-usage-drops-with-mouse-movement.3519925/)
