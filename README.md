@@ -46,10 +46,14 @@ r.Streaming.UsePerTextureBias=1
 ### Various settings for `[/script/engine.renderersettings]` section
 ### Improve TAA sharpeness and quality
 ```ini
-r.PostProcessAAQuality=5
-r.Tonemapper.Sharpen=0.6
+r.PostProcessAAQuality=6
+r.TemporalAASamples=4
+r.Tonemapper.Sharpen=1
+r.TemporalAACurrentFrameWeight=0.45
 r.DepthOfField.FarBlur=0
 ```
+Details: https://forums.unrealengine.com/t/sharp-temporal-aa/82900/33
+
 ### Another possibele stutters fix
 ```ini
 r.CreateShadersOnLoad=1
